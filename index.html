@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CARRYON | Smart Delivery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>CARRYON</h1>
+  <p>Fast • Secure • Reliable Delivery</p>
+  <a href="#order" class="btn">Place an Order</a>
+</header>
+
+<section class="grid">
+  <div class="card">
+    <h2>📦 Orders</h2>
+    <p>Quick pickup and safe delivery across cities.</p>
+  </div>
+  <div class="card">
+    <h2>🚚 Packages</h2>
+    <p>Documents, parcels, electronics, food & more.</p>
+  </div>
+  <div class="card">
+    <h2>🛒 Products</h2>
+    <p>Farm produce, clothes, gadgets, groceries.</p>
+  </div>
+</section>
+
+<section class="info">
+  <h2>🤝 Sellers → Buyers</h2>
+  <p>
+    We help sellers deliver products directly to buyers
+    with trust, speed, and affordability.
+  </p>
+</section>
+
+<!-- ORDER FORM -->
+<section id="order" class="order">
+  <h2>📋 Place Your Order</h2>
+
+  <form id="orderForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <select name="item" required>
+      <option value="">Select Item Type</option>
+      <option>Food</option>
+      <option>Electronics</option>
+      <option>Clothing</option>
+      <option>Documents</option>
+      <option>parcels</option>
+      <option>packages </option>
+      <option>products </option>
+      <option>others</option>
+    </select>
+
+    <input type="text" name="pickup" placeholder="Pickup Location" required>
+    <input type="text" name="delivery" placeholder="Delivery Location" required>
+
+    <textarea name="note" placeholder="Additional Notes"></textarea>
+
+    <button type="submit">Submit Order</button>
+    <p id="status"></p>
+  </form>
+</section>
+
+<section class="updates">
+  <h2>📰 CARRYON Updates</h2>
+  <div id="posts">Loading...</div>
+  <a href="blog.html">View all updates →</a>
+</section>
+
+<footer>
+  <p>© 2026 CARRYON Delivery Services</p>
+</footer>
+
+<script src="js/order.js"></script>
+<script src="js/contentful.js"></script>
+</body>
+  </html>
