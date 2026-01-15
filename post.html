@@ -12,7 +12,7 @@
 const slug = new URLSearchParams(window.location.search).get("slug");
 
 const SPACE = " wh2jduuotak5";
-const TOKEN = "-LgprZeoLtz64wCTTjVdFx1RrWA5C11ZtEk4UdrNW7g";
+const TOKEN = "0ScBbx4j8JiWDpxcAo9WIGuJie3pt433xYYIgmnH5NI";
 
 fetch(`https://cdn.contentful.com/spaces/${SPACE}/entries?access_token=${TOKEN}&fields.slug=${slug}`)
   .then(res => res.json())
