@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CARRYON Post</title>
+</head>
+<body>
+
+<a href="blog.html">← Back</a>
+<div id="post">Loading...</div>
+
+<script>
+const slug = new URLSearchParams(window.location.search).get("slug");
+
+const SPACE = "YOUR_SPACE_ID";
+const TOKEN = "YOUR_DELIVERY_API_KEY";
+
+fetch(`https://cdn.contentful.com/spaces/${SPACE}/entries?access_token=${TOKEN}&fields.slug=${slug}`)
+  .then(res => res.json())
+  .then(data => {
+    const post = data.items[0].fields;
+    document.getElementById("post").innerHTML = `
+      <h1>${post.title}</h1>
+      <p>${post.body}</p>
+    `;
+  });
+</script>
+
+</body>
+  </html>
