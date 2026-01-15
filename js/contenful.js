@@ -1,5 +1,5 @@
 const SPACE_ID = "wh2jduuotak5";
-const ACCESS_TOKEN = "-LgprZeoLtz64wCTTjVdFx1RrWA5C11ZtEk4UdrNW7g";
+const ACCESS_TOKEN = "0ScBbx4j8JiWDpxcAo9WIGuJie3pt433xYYIgmnH5NI";
 const CONTENT_TYPE = "blogPost3";
 
 const url = `https://cdn.contentful.com/spaces/${SPACE_ID}/entries?access_token=${ACCESS_TOKEN}&content_type=${CONTENT_TYPE}`;
