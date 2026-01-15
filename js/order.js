@@ -11,4 +11,12 @@ form.addEventListener("submit", function (e) {
 
   status.textContent = "✅ Order submitted! We will contact you shortly.";
   form.reset();
+  const msg = `New Order:
+Name: ${order.name}
+Phone: ${order.phone}
+Item: ${order.item}
+Pickup: ${order.pickup}
+Delivery: ${order.delivery}`;
+
+window.open(`https://wa.me/233XXXXXXXXX?text=${encodeURIComponent(msg)}`);
 });
