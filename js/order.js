@@ -18,5 +18,5 @@ Item: ${order.item}
 Pickup: ${order.pickup}
 Delivery: ${order.delivery}`;
 
-window.open(`https://wa.me/233XXXXXXXXX?text=${encodeURIComponent(msg)}`);
+window.open(`https://wa.me/233257698275?text=Hello%20CARRYON%20🚚%0APickup:%20_____%0ADrop-off:%20_____%0AItem:%20_____%0APhone:%20_____`);
 });
