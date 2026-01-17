@@ -23,7 +23,7 @@ Note: ${order.note || "None"}
 
   const whatsappURL = `https://wa.me/233257698275?text=${encodedMessage}`;
 
-  window.open(whatsappURL, "_blank", "noopener,noreferrer");
+  location.href = whatsappURL;
 
   status.textContent = "✅ Order submitted! We will contact you shortly.";
   form.reset();
