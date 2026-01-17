@@ -21,7 +21,7 @@ Note: ${order.note || "None"}
 
   const phoneNumber = "233257698275"; // NO +
 
-  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  const whatsappURL = `https://wa.me/233257698275?text=${encodedMessage}`;
 
   window.open(whatsappURL, "_blank", "noopener,noreferrer");
 
