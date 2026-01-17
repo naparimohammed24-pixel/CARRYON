@@ -23,7 +23,12 @@ Note: ${order.note || "None"}
 
   const whatsappURL = `https://wa.me/233257698275?text=${encodedMessage}`;
 
-  location.href = whatsappURL;
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+if (isMobile) {
+  location.href = whatsappURL; // open app
+} else {
+  window.open(whatsappURL, "_blank"); // desktop opens WhatsApp Web
+}
 
   status.textContent = "✅ Order submitted! We will contact you shortly.";
   form.reset();
